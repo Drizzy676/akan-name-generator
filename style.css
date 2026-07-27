@@ -98,15 +98,41 @@ button:hover{
     transform:translateY(-2px);
 }
 
-/*RESULT*/
+button{
+    margin-top:10px;
+}
+
+#resetBtn{
+    background:#CE1126;
+}
+
+#resetBtn:hover{
+    background:#a20d20;
+}
+
+/* RESULT CARD */
 
 #result{
+    opacity:0;
+    transform:translateY(20px);
+    transition:.6s ease;
     margin-top:25px;
-    padding:20px;
     text-align:center;
-    font-size:22px;
-    font-weight:bold;
+}
+
+#result.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+#result h2{
     color:#006B3F;
+    margin-top:10px;
+    font-size:35px;
+}
+
+#result h3{
+    color:#CE1126;
 }
 
 /*FOOTER*/

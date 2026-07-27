@@ -4,7 +4,7 @@ A modern web application that generates a user's traditional **Akan name** based
 
 ---
 
-## 📖 Project Description
+## Project Description
 
 This project allows users to:
 
@@ -32,7 +32,7 @@ The application is built using **HTML**, **CSS**, and **JavaScript** and demonst
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - HTML
 - CSS
@@ -41,7 +41,7 @@ The application is built using **HTML**, **CSS**, and **JavaScript** and demonst
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 akan-name-generator/
@@ -55,7 +55,7 @@ akan-name-generator/
 
 ---
 
-## 🚀 Installation
+## Installation
 
 1. Clone the repository
 
@@ -73,7 +73,7 @@ cd akan-name-generator
 
 ---
 
-## 💻 How to Use
+## How to Use
 
 1. Open the application.
 2. Select your date of birth.
@@ -84,7 +84,7 @@ cd akan-name-generator
 
 ---
 
-## 📸 Screenshot
+## Screenshot
 
 Example:
 
@@ -118,6 +118,6 @@ GitHub: https://github.com/Drizzy676
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License.

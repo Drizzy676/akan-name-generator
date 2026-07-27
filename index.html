@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akan Name Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Akan Name Generator</h1>
+
+        <p>
+            Discover your traditional Akan name based on the day you were born.
+        </p>
+
+        <form id="akanForm">
+
+            <div class="form-group"
+                <label for="Name">Name</label>
+                <input type="Name" id="Name" required>
+            </div>
+            <div class="form-group">
+                <label for="birthdate">Date of Birth</label>
+                <input type="date" id="birthdate" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="gender">Gender</label>
+
+                <select id="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+            <button type="submit">
+                Generate Akan Name
+            </button>
+
+        </form>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -135,15 +135,47 @@ button{
     color:#CE1126;
 }
 
-/*FOOTER*/
+/*LOADER*/
 
-footer{
-    text-align:center;
-    margin-top:35px;
-    color:#666;
-    font-size:14px;
+.loader{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-top:25px;
 }
 
+.hidden{
+    display:none;
+}
+
+.spinner{
+
+    width:70px;
+    height:70px;
+    border:8px solid #ddd;
+    border-top:8px solid #006B3F;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+
+.loader p{
+    margin-top:20px;
+    font-size:18px;
+    color:#006B3F;
+    font-weight:bold;
+}
+
+@keyframes spin{
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+
+}
 /* RESPONSIVE*/
 
 @media(max-width:768px){

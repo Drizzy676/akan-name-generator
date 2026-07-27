@@ -50,14 +50,14 @@ form.addEventListener("submit", function (event) {
     if (birthdate === "") {
         result.classList.remove("show");
         result.style.color = "red";
-        result.innerHTML = "❌ Please select your birth date.";
+        result.innerHTML = "Please select your birth date.";
         return;
     }
 
     if (gender === "") {
         result.classList.remove("show");
         result.style.color = "red";
-        result.innerHTML = "❌ Please select your gender.";
+        result.innerHTML = "Please select your gender.";
         return;
     }
 
@@ -90,7 +90,7 @@ form.addEventListener("submit", function (event) {
     result.style.color = "#006B3F";
 
     result.innerHTML = `
-        <h3>🎉 Congratulations!</h3>
+        <h3>Congratulations!</h3>
 
         <p>
             You were born on

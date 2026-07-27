@@ -35,6 +35,7 @@ const form = document.getElementById("akanForm");
 const result = document.getElementById("result");
 const resetBtn = document.getElementById("resetBtn");
 const sound = document.getElementById("celebrationSound");
+const loader = document.getElementById("loader");
 
 //GENERATE AKAN NAME//
 
@@ -85,21 +86,27 @@ form.addEventListener("submit", function (event) {
 
     // Display result
 
-    result.classList.remove("show");
+// Hide old result
+result.classList.remove("show");
+result.innerHTML = "";
 
-    result.style.color = "#006B3F";
+// Show loader
+loader.classList.remove("hidden");
+
+// Wait 2 seconds
+setTimeout(() => {
+
+    loader.classList.add("hidden");
 
     result.innerHTML = `
-        <h3>Congratulations!</h3>
+        <h3>🎉 Congratulations!</h3>
+
+        <p>You were born on
+        <strong>${days[dayNumber]}</strong>.</p>
 
         <p>
-            You were born on
-            <strong>${days[dayNumber]}</strong>.
-        </p>
-
-        <p>
-            Birth Date:
-            <strong>${formattedDate}</strong>
+        Birth Date:
+        <strong>${formattedDate}</strong>
         </p>
 
         <p>Your Akan Name is</p>
@@ -107,27 +114,18 @@ form.addEventListener("submit", function (event) {
         <h2>${akanName}</h2>
     `;
 
-    // Fade In Animation
+    result.classList.add("show");
 
-    setTimeout(() => {
-        result.classList.add("show");
-    }, 100);
-
-    // Play Celebration Sound
-
+    // Play sound
     if (sound) {
         sound.currentTime = 0;
-        sound.play().catch(() => {
-            // Ignore autoplay restrictions
-        });
+        sound.play().catch(() => {});
     }
 
-    // Confetti Animation
-
+    // Confetti
     if (typeof confetti === "function") {
 
-        const duration = 3000;
-        const end = Date.now() + duration;
+        const end = Date.now() + 3000;
 
         (function frame() {
 
@@ -150,11 +148,10 @@ form.addEventListener("submit", function (event) {
             }
 
         })();
+
     }
 
-});
-
-//RESET BUTTON//
+}, 2000)});
 
 resetBtn.addEventListener("click", function () {
 
@@ -164,14 +161,6 @@ resetBtn.addEventListener("click", function () {
 
     result.classList.remove("show");
 
-});
-
-//PRESS ENTER TO SUBMIT//
-
-document.addEventListener("keypress", function (event) {
-
-    if (event.key === "Enter") {
-        form.requestSubmit();
-    }
+    loader.classList.add("hidden");
 
 });

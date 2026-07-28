@@ -32,6 +32,11 @@ The application is built using **HTML**, **CSS**, and **JavaScript** and demonst
 
 ---
 
+## Live Demo
+
+click here [Demo](https://drizzy676.github.io/akan-name-generator/)
+
+
 ## Technologies Used
 
 - HTML

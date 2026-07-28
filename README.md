@@ -43,15 +43,15 @@ The application is built using **HTML**, **CSS**, and **JavaScript** and demonst
 
 ## Project Structure
 
-```
+
 akan-name-generator/
-│
-├── index.html
-├── style.css
-├── script.js
-├── README.md
-└── LICENSE
-```
+
+ - index.html
+ - style.css
+ - script.js
+ - README.md
+ - LICENSE
+
 
 ---
 
@@ -65,9 +65,9 @@ git clone https://github.com/Drizzy676/akan-name-generator.git
 
 2. Open the project folder
 
-```bash
+bash
 cd akan-name-generator
-```
+
 
 3. Open **index.html** in your browser.
 
@@ -86,14 +86,8 @@ cd akan-name-generator
 
 ## Screenshot
 
-Example:
-
-```
-homepage.png
-```
-
----
-
+! [Homepage] (screenshots/homepage.png)
+! [Result] (screenshots/result.png)
 ## JavaScript Concepts Used
 
 This project demonstrates:

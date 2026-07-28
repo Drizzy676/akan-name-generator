@@ -99,7 +99,7 @@ setTimeout(() => {
     loader.classList.add("hidden");
 
     result.innerHTML = `
-        <h3>🎉 Congratulations!</h3>
+        <h3>Congratulations!</h3>
 
         <p>You were born on
         <strong>${days[dayNumber]}</strong>.</p>

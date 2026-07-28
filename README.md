@@ -22,7 +22,7 @@ The application is built using **HTML**, **CSS**, and **JavaScript** and demonst
 
 - Date of birth input
 - Gender selection
-- 🇬Akan name generation
+- Akan name generation
 - Input validation
 - Confetti celebration animation
 - Celebration sound effect

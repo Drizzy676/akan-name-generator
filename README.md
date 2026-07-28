@@ -49,6 +49,9 @@ akan-name-generator/
  - index.html
  - style.css
  - script.js
+screenshots/
+      - homepage.png
+      - result.png 
  - README.md
  - LICENSE
 
@@ -87,10 +90,10 @@ cd akan-name-generator
 ## Screenshot
 
 ### Homepage
-! [Homepage](screenshots/homepage.png)
+[Homepage](screenshots/homepage.png)
 
 ### Results
-! [Result](screenshots/result.png)
+[Result](screenshots/result.png)
 
 ## JavaScript Concepts Used
 

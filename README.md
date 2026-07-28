@@ -86,8 +86,12 @@ cd akan-name-generator
 
 ## Screenshot
 
-! [Homepage] (screenshots/homepage.png)
-! [Result] (screenshots/result.png)
+### Homepage
+! [Homepage](screenshots/homepage.png)
+
+### Results
+! [Result](screenshots/result.png)
+
 ## JavaScript Concepts Used
 
 This project demonstrates:

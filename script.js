@@ -31,7 +31,7 @@ const days = [
 
 //DOM ELEMENTS//
 
-const form = document.getElementById("akanForm");
+const form = document.getElementById("akan-Form");
 const result = document.getElementById("result");
 const resetBtn = document.getElementById("resetBtn");
 const sound = document.getElementById("celebrationSound");

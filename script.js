@@ -31,10 +31,9 @@ const days = [
 
 //DOM ELEMENTS//
 
-const form = document.getElementById("akan-Form");
+const form = document.getElementById("form-akan");
 const result = document.getElementById("result");
 const resetBtn = document.getElementById("resetBtn");
-const sound = document.getElementById("celebrationSound");
 const loader = document.getElementById("loader");
 
 //GENERATE AKAN NAME//
@@ -77,7 +76,7 @@ form.addEventListener("submit", function (event) {
 
     // Format date nicely
 
-    const formattedDate = date.toLocaleDateString("en-US", {
+    const formattedDate = date.toLocaleDateString("en-GB", {
         weekday: "long",
         year: "numeric",
         month: "long",
@@ -115,12 +114,6 @@ setTimeout(() => {
     `;
 
     result.classList.add("show");
-
-    // Play sound
-    if (sound) {
-        sound.currentTime = 0;
-        sound.play().catch(() => {});
-    }
 
     // Confetti
     if (typeof confetti === "function") {
